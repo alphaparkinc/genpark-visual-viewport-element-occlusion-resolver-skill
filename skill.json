@@ -1,0 +1,39 @@
+{
+  "name": "genpark-visual-viewport-element-occlusion-resolver-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Visual viewport element occlusion resolver detecting floating cookie modals, sticky headers, and auto-scrolling to clickability.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "web-agent",
+  "tags": [
+    "computer-use",
+    "visual-grounding",
+    "element-occlusion",
+    "auto-scroll",
+    "modal-dismissal"
+  ],
+  "inputs": {
+    "target_element_id": {
+      "type": "string"
+    },
+    "viewport_bounds": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "occlusion_resolution_id": {
+      "type": "string"
+    },
+    "is_occluded_by_overlay": {
+      "type": "boolean"
+    },
+    "element_now_clickable": {
+      "type": "boolean"
+    },
+    "visual_grounding_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
